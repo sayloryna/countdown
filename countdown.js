@@ -2,6 +2,7 @@ const deadline = new Date("Apr 2 2024 09:00:00 GMT+0200")
 
 function getRemainingTime(deadline) {
 	let now = new Date(),
+    let remainNow =
 		remainTime = (new Date(deadline) - now + 1000) / 1000,
 		remainSeconds = ('0' + Math.floor(remainTime % 60)).slice(-2),
 		remainMinutes = ('0' + Math.floor(remainTime / 60 % 60)).slice(-2),
