@@ -35,4 +35,4 @@ function getRemainingTime (deadline) {
     },1000)
 
  }
- console.log(countdown(deadline, clock, "EMPEZAMOS"))
+ console.log(countdown(deadline, "clock", "EMPEZAMOS"))
