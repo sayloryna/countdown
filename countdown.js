@@ -1,8 +1,7 @@
+const deadline = new Date("Apr 2 2024 09:00:00 GMT+0200")
 
-const deadline = new Date("Apr 2 2024 09:00:00 GMT+0200");
 function getRemainingTime(deadline) {
-	let now =
-        new Date(),
+	let now = new Date(),
 		remainTime = (new Date(deadline) - now + 1000) / 1000,
 		remainSeconds = ('0' + Math.floor(remainTime % 60)).slice(-2),
 		remainMinutes = ('0' + Math.floor(remainTime / 60 % 60)).slice(-2),
@@ -15,7 +14,7 @@ function getRemainingTime(deadline) {
 		remainHours,
 		remainDays,
 
-	};
+	}
 
 };
 
@@ -33,20 +32,3 @@ const countdown = (deadline, elem, finalMessage) => {
 
 };
 console.log(countdown(deadline, "clock", "EMPEZAMOS"))
-
-};
-
-const countdown = (deadline, elem, finalMessage) => {
-	const el = document.getElementById(elem);
-	const timerUpdate = setInterval(() => {
-		let time = getRemainingTime(deadline);
-		el.innerHTML = `${time.remainDays}Days:${time.remainHours}Hours:${time.remainMinutes}Min:${time.remainSeconds}Sec`;
-		if (time.remainTime <= 1) {
-			clearInterval(timerUpdate)
-			el.innerHTML = finalMessage
-		};
-
-	}, 1000);
-
-};
-console.log(countdown(deadline, "clock", "EMPEZAMOS"));
