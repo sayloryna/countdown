@@ -1,9 +1,4 @@
 const deadline= new Date("Apr 2 2024 09:00:00 GMT+0200")
- const now = new Date()
-
-
- console.log(remainingDays)
-
 function getRemainingTime (deadline) {
     let now = new Date(),
         remainTime = (new Date(deadline) - now +1000)/1000,
@@ -34,5 +29,5 @@ function getRemainingTime (deadline) {
 
     },1000)
 
- }
+ };
  console.log(countdown(deadline, "clock", "EMPEZAMOS"))
