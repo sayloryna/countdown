@@ -8,8 +8,9 @@ body {
     align-items: center;
 }
 img{
-    display: flexbox;
-    size: 50vw;
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
     
 }
 h1 {
