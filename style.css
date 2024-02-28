@@ -4,8 +4,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #5d738b;
+    display: flexbox;
+    align-items: center;
 }
-
+img{
+    display: flexbox;
+    
+}
 h1 {
     color: #4b4242;
     text-align: center;
