@@ -7,19 +7,33 @@ body {
     display: flexbox;
     align-items: center;
 }
+ .container{
+    background-color: #f3eaea;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+ }
 img{
     display: block;
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 300px;
+    max-height: 300px;
+    padding: 0 auto;
+
     
 }
 h1 {
-    color: #4b4242;
+
+    color: #4930a9;
     text-align: center;
 }
 
 
 #clock {
+    border: 10px;
     border-radius: 25px;
     font-size: 48px;
     font-weight: bold;
