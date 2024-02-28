@@ -3,24 +3,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #5d738b;
 }
 
 h1 {
-    color: #333;
+    color: #4b4242;
     text-align: center;
 }
 
 
 #clock {
-    font-size: 24px;
+    border-radius: 25px;
+    font-size: 48px;
     font-weight: bold;
-    color: #007bff; /* Azul */
-}
-
-
-/* Estilos para el contenedor principal */
-.container {
-    max-width: 800px;
-    margin: 20px auto; /* Centrar horizontalmente */
+    color: #5d738b;
     text-align: center;
+    background-color: aliceblue;
 }
+
